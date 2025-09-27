@@ -1,166 +1,173 @@
+/* General Page Styles */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   line-height: 1.6;
-  background-color: black;
+  background: white;
   color: black;
+  text-align: center;
 }
 
+/* Header & Navigation */
 header {
-  background: lightblue;
+  background: blue;
   color: white;
-  padding: 15px;
+  padding: 15px 0;
   text-align: center;
-  font-size: 1.5rem;
-  font-weight: bold;
+  position: sticky;
+  top: 0;
+}
+
+header h1 {
+  margin: 0;
 }
 
 nav {
-  background: black;
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
+  margin-top: 10px;
 }
 
 nav a {
   color: white;
-  margin: 0 15px;
   text-decoration: none;
+  margin: 0 10px;
   font-weight: bold;
-  transition: color 0.3s;
+  transition: 0.3s;
 }
 
 nav a:hover {
-  color: orangered;
+  text-decoration: underline;
 }
 
-.hero {
-  position: relative;
-  text-align: center;
-  background: black;
-  color: white;
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
 }
 
-.hero img {
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
-  opacity: 0.8;
-}
-
-
-.shoes-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 30px;
-}
-
-.shoes-card {
+section {
   background: white;
+  margin-bottom: 20px;
+  padding: 20px;
   border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.shoes-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+#intro img {
+  max-width: 150px;
+  border-radius: 50%;
+  margin: 10px 0;
 }
 
-.shoes-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.shoes-card p {
-  padding: 0 10px;
-  font-size: 0.9rem;
-  margin-bottom: 10px;
-}
-
-.price {
-  font-weight: bold;
-  color: orangered;
-  font-size: 1.1rem;
-}
-
-.shoes-card button {
-  background: orange;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  margin: 15px 0;
-  cursor: pointer;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-
-.shoes-card button:hover {
-  background: orangered;
-}
-
-
-main section {
-  padding: 30px;
-}
-
-
-.gallery-grid {
+.skells {
   display: flex;
-  gap: 15px;
+  gap: 20px;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
-.gallery-grid img {
-  width: 32%;
-  border-radius: 8px;
-  object-fit: cover;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+.skells div {
+  text-align: center;
 }
 
-footer {
+.skells img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+}
+
+.activities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.activities div {
+  background: #fdfdfd;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  width: 250px;
+  text-align: center;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.activities img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+/* Calendar (Aside) */
+aside {
+  margin: 20px 0;
+  padding: 15px;
+  background: bisque;
+  border-radius: 10px;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+aside table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+
+aside th,
+aside td {
+  border: 1px solid cadetblue;
+  padding: 8px;
+  text-align: center;
+}
+
+.birthday {
+  background: blue;   /* Blue header */
+  color: white;
+
+aside th {
+  background: blue;
+  color: white;
+}
+
+fotter {
   background: black;
   color: white;
   text-align: center;
-  padding: 25px;
-  margin-top: 40px;
+  padding: 20px;
+  margin-top: 20px;
+  display: block;
 }
 
-
-form {
+fotter form {
   display: flex;
   flex-direction: column;
   max-width: 400px;
-  margin: 0 auto 20px;
+  margin: auto;
 }
 
-form input,
-form textarea,
-form button {
+fotter input,
+fotter textarea {
   margin: 8px 0;
   padding: 10px;
-  border-radius: 5px;
   border: none;
+  border-radius: 5px;
 }
 
-form input,
-form textarea {
-  width: 100%;
-}
-
-form button {
-  background: orange;
+fotter button {
+  background: black;
   color: white;
-  font-weight: bold;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: 0.3s;
 }
 
-form button:hover {
-  background: orangered;
+fotter button:hover {
+  background: blue;
 }
 
