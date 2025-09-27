@@ -1,0 +1,166 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: black;
+  color: black;
+}
+
+header {
+  background: lightblue;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav {
+  background: black;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: orangered;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  background: black;
+  color: white;
+}
+
+.hero img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+
+.shoes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.shoes-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shoes-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.shoes-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.shoes-card p {
+  padding: 0 10px;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: bold;
+  color: orangered;
+  font-size: 1.1rem;
+}
+
+.shoes-card button {
+  background: orange;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 15px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.shoes-card button:hover {
+  background: orangered;
+}
+
+
+main section {
+  padding: 30px;
+}
+
+
+.gallery-grid {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.gallery-grid img {
+  width: 32%;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto 20px;
+}
+
+form input,
+form textarea,
+form button {
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+form input,
+form textarea {
+  width: 100%;
+}
+
+form button {
+  background: orange;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: orangered;
+}
+
